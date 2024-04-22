@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap Connection cdn Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>MLSA-UoK</title>
+  <link rel="shortcut icon" href="./Images/remove bg img.png" type="image/x-icon">
+  <!-- <link href="./output.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg bg-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4 fw-bold" href="#">MLSA-UoK</a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#teams_members">Team Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Blogs</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn w-100 fw-bold" type="submit">Get Involved</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="container mt-5 py-5">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <h1 class="text fw-bold">
+            <h1 class="text fw-bold">
+              Welcome to <span id="span-clr">MLSA-UoK</span>
+            </h1>
+            <p class="text-base">Respect: Treat everyone with respect and kindness.
+              Inclusivity: Embrace diversity and create a welcoming environment.
+              <span id="dots">...</span><span id="more">
+                Collaboration: Foster teamwork and share knowledge.
+                Professionalism: Maintain professionalism in all interactions.
+                Privacy: Respect others' privacy and confidentiality.
+                Responsible Use: Use resources ethically and responsibly.
+                Compliance: Follow all laws and organizational policies.
+                Accountability: Hold ourselves and others accountable.
+                Continuous Improvement: Strive for ongoing improvement and feedback.
+              </span>
+            </p>
+            <button onclick="myFunction()" id="myBtn" class="btn fw-bold my-3" type="submit">Read more</button>
+            <div class="">
+
+              <!-- <button class="btn" type="submit">Join Us</button> -->
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Join Us with our social platforms</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center gap-2"
+                      style="cursor: pointer;">
+                      <!-- Here I could add achor tag But I leave it as it is. -->
+                      <div class="icons d-flex justify-content-center align-items-center text-align-center gap-3">
+                        <a href="https://www.facebook.com/mlsakarachi/"><i class="bi bi-facebook fs-3 fw-bold"></i></a>
+                        <a href="https://www.linkedin.com/company/mlsa-uok/?originalSubdomain=pk"><i
+                            class="bi bi-linkedin fs-3 fw-bold"></i></a>
+                        <i class="bi bi-instagram text-danger fs-3 fw-bold"></i>
+                        <a href="https://twitter.com/mlsauok"><i class="bi bi-twitter fs-3 fw-bold text-primary"></i></a>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn fw-bold" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn fw-bold" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Join Us</button>
+              <button class="btn fw-bold" type="submit">Learn more</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+
+  <div class="container mt-5 py-5" id="about">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+        <img width="350" src="./Images/mlsa logo.jpeg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+        <h1 id="span-clr"><b>About Us</b></h1>
+        <h5>The MLSA-UoK community, born out of the Microsoft Learn Student Ambassadors
+          program, stands as a testament to the commitment towards fostering inclusivity and diversity in the tech
+          industry. This community serves as a supportive platform where individuals from various backgrounds come
+          together to share experiences, insights, and resources. </h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Mission -->
+
+  <div class="container mt-5 py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+        <img width="450" src="./Images/mission.png" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 mt-5">
+        <h1 id="span-clr"><b>Our Mission</b>
+        </h1>
+        <h5 id="our-mission">Our mission is to create a welcoming and supportive environment where women and gender
+          minorities can thrive in the tech industry. We strive to empower individuals through education, mentorship,
+          and community-building initiatives.</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Different Gender -->
+
+  <div class="container mt-5 py-5" id="gender-main">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center" id="gender-img">
+        <img width="350" src="./Images/diff gender.jpg" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5><b class="quote">&#x201F</b> Let us choose for ourselves our path in life, and let us try to strew that path
+          with flowers.</h5>
+        <h4 class="emilie d-flex justify-content-center align-items-center text-align-center mt-4 ms-5">Emilie du
+          Chatelet</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Team Members -->
+  <div class="container mt-5 py-5" id="teams_members">
+    <div class="row">
+      <div class="col">
+        <h1 class="d-flex justify-content-center align-items-center" id="span-clr"><b>Meet Our Core Team</b></h1>
+        <!-- <h5 class="d-flex justify-content-center align-items-center">Click on each event to register</h5> -->
+        <div class="wrapper mt-5 py-5 ms-2">
+          <i id="left" class="fa-solid fas fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="./Images/Team1.png" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                Saram Hai
+              </h2>
+              <span>Operation Director</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/Team2.png" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                Kiran Amin
+              </h2>
+              <span>Operation Director</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/Team3.png" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                Annus Usman
+              </h2>
+              <span>Operation Director</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/Team4.png" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                Hamna Nadeem
+              </h2>
+              <span>Operation Director</span>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Different Gender -->
+  <div class="container mt-5 py-5" id="gender-main">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h5><b class="quote">&#x201F</b> Let us choose for ourselves our path in life, and let us try to strew that path
+          with flowers.</h5>
+        <h4 class="emilie d-flex justify-content-center align-items-center text-align-center mt-4 ms-5">Emilie du
+          Chatelet</h4>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center" id="gender-img">
+        <img width="350" src="./Images/diff gender1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Events -->
+  <!-- <div class="container mt-5 py-5" id="events">
+    <div class="row">
+      <div class="col">
+        <h1 class="d-flex justify-content-center align-items-center" id="span-clr"><b>Upcoming Events</b></h1>
+        <h5 class="d-flex justify-content-center align-items-center">Click on each event to register</h5>
+        <div class="wrapper mt-5 py-5 ms-2">
+          <i id="left" class="fa-solid fas fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="./Images/one.jpeg" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                MLSA-WGMIT
+              </h2>
+              <span>WGMIT KickOff Session</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/two.jpeg" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                MLSA-WGMIT
+              </h2>
+              <span>International Women Day</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/three.jpeg" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                MLSA-WGMIT
+              </h2>
+              <span>OpenTechInclusion-Inclusivity in Open Source</span>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./Images/four.jpeg" alt="" draggable="false"> </div>
+              <h2 style="color: #17C3B2; font-weight:bold;">
+                MLSA-WGMIT
+              </h2>
+              <span>Meetup Session</span>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fas fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container mt-5 py-5" id="events">
+    <div class="row">
+      <h1 class="d-flex justify-content-center align-items-center" id="span-clr"><b>Upcoming Events</b></h1>
+      <h5 class="d-flex justify-content-center align-items-center">Click on each event to register</h5>
+      <div class="col-lg-4 col-md-6 mt-3 py-5">
+        <img width="300" src="./Images/Upcoming event1.png" alt="">
+      </div>
+      <div class="col-lg-4 col-md-6 mt-3 py-5">
+        <img width="300" src="./Images/Upcoming event2.png" alt="">
+      </div>
+      <div class="col-lg-4 col-md-6 mt-3 py-5">
+        <img width="300" src="./Images/Upcoming event3.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Form for MLSA Guide -->
+  <h1 class="d-flex justify-content-center align-items-center" id="span-clr"><b>Contact Us</b></h1>
+  <div class="container mt-5 py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 py-5">
+        <img width="400" src="./Images/form pic.png" alt="">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 rounded-3" style="background-color: #78AFAA;">
+        <form class="form py-5 ">
+          <div class="mb-3 fw-bold">
+            <label for="exampleInputName1" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 fw-bold">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3 fw-bold">
+            <label for="exampleInputContact1" class="form-label">Contact</label>
+            <input type="number" class="form-control" id="exampleInputContact1" aria-describedby="contactHelp">
+            <div id="contactHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3 fw-bold">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn fw-bold text-dark">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid d-flex justify-content-center align-items-center text-align-center"
+    style="background-color: #78AFAA;">
+    <div class="row">
+      <div class="col">
+        <h2 class="mic d-flex justify-content-center align-items-center text-align-center fw-bold">Microsoft Learn
+          Student
+          Ambassadors-Karachi Chapter</h2>
+        <h2 class="con d-flex justify-content-center align-items-center text-align-center">Contact Information</h2>
+        <div class="icons"></div>
+        <i
+          class="bi bi-envelope-arrow-down-fill d-flex justify-content-center align-items-center text-align-center"></i>
+        <h6 class="mlsa d-flex justify-content-center align-items-center text-align-center">mlsakhiofficial@outlook.com
+        </h6>
+        <div class="icons d-flex justify-content-center align-items-center text-align-center gap-3">
+          <a href="https://www.facebook.com/mlsakarachi/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/mlsa-uok/?originalSubdomain=pk"><i class="bi bi-linkedin "></i></a>
+          <i class="bi bi-instagram text-danger"></i>
+          <a href="https://twitter.com/mlsauok"><i class="bi bi-twitter text-primary"></i></a>
+        </div>
+        <h6 class="kar d-flex justify-content-center align-items-center text-align-center">mlsa-karachi</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Add content and structure as needed -->
+  <script src="main.js"></script>
+  <!-- Bootstrap Connection JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
